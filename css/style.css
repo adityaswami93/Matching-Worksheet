@@ -1,0 +1,278 @@
+td { font-size: 100%; }
+
+*
+{
+    -webkit-user-select: none;
+    -moz-user-select: -moz-none;
+    /*IE10*/
+    -ms-user-select: none;
+    user-select: none;
+
+    /*You just need this if you are only concerned with android and not desktop browsers.*/
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+input {
+        max-width: 100%;
+    } 
+
+#bg {
+    background-color: #66FF66;
+}
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+  #tbl {
+    width: 50%;
+  }
+  #errorMsg {
+    font-size: 150%;
+  }
+  .left ,.right{
+    width: 20%;
+  }
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+  #tbl {
+    width: 50%;
+  }
+  #errorMsg {
+    font-size: 150%;
+  }
+  .left ,.right{
+    width: 20%;
+  }
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+    #tbl {
+      width: 60%;
+    }
+    #errorMsg {
+      font-size: 150%;
+    }
+    .left ,.right{
+      width: 20%;
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+  #tbl {
+    width: 60%;
+  }
+  #errorMsg {
+    font-size: 150%;
+  }
+  .left ,.right{
+    width: 20%;
+  }
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+  #tbl {
+    width: 80%;
+  }
+  #errorMsg {
+    font-size: 82%;
+  }
+  /*
+  #cvs {
+    width: 100%;
+    height: 99%;
+  }
+  */
+  .left ,.right{
+    width: 5%;
+  }
+  #centrecol {
+    width: 10%;
+  }
+}
+
+
+#counterDisplay {
+
+}
+
+#noOfClicks{
+	color: blue;
+	font-size: 150%;
+	font-family: 'Indie Flower', cursive;
+	float: left;
+	width: 20%;
+}
+
+#counterDiv {
+	float: left;
+
+}
+
+#gen {
+	margin-bottom: 2%;
+}
+
+#cvs {
+  padding: 0;
+  display: block;
+  margin: 0 auto;
+
+  width: 100%;
+  height: 99%;
+
+}
+
+#centreDiv {
+  width: 100%;
+  height:100%;
+}
+
+#centrecol {
+
+}
+
+.hide{
+    padding-left: 10px;
+    background: url('img/down.gif') no-repeat left middle;
+}
+
+.show:after{
+    padding-left: 10px;
+    background: url('img/up.gif') no-repeat left middle;
+}
+
+.rightpic{
+	padding-right: 5%;
+	float: right;
+  pointer-events: none;
+}
+
+
+.right:hover  {
+  position: relative;
+  transform: translateX(-5%);
+}
+
+.rightpic-darken {
+	-webkit-filter: brightness(10%);
+}
+
+.right-next {
+  pointer-events: none;
+}
+
+.right-next:hover{
+
+}
+
+
+.leftpic{
+	padding-left: 5%;
+	float: left;
+  pointer-events: none;
+}
+
+.leftpic-darken {
+	-webkit-filter: brightness(10%);
+
+}
+
+.right {
+  cursor: pointer;
+	transition: 1s ease-in-out;
+}
+
+
+.left  {
+  cursor: pointer;
+	transition: 1s ease-in-out;
+}
+
+.left-next {
+  pointer-events: none;
+}
+
+.left-next:hover{
+
+}
+
+.left:hover {
+  position: relative;
+  transform: translateX(5%);
+
+}
+
+
+.active-left {
+	transform: translateX(5%);
+
+}
+
+.active-right {
+	transform: translateX(-5%);
+}
+
+
+#tbl {
+	border: 1px solid black;
+	background-color: #00FFFF;
+	/*margin-left: 25%;
+	margin-right: 20%;
+  */
+  margin: 0 auto;
+  margin-bottom: 2%;
+	position: relative;
+  display: none;
+}
+
+#tbldiv {
+  border:none;
+}
+
+#title{
+	text-align: center;
+	color: red;
+	font-size: 250%;
+	font-family: 'Indie Flower', cursive;
+	background-color: #FF8C00;
+	margin-left: -1.5%;
+	margin-right: -1.5%;
+	margin-top: 0%;
+}
+
+#instruction{
+	text-align: center;
+	color: blue;
+	font-family: 'Indie Flower', cursive;
+  font-size: 150%;
+	display: none;
+}
+
+#errorMsg {
+	text-align: center;
+	color: red;
+	font-family: 'Indie Flower', cursive;
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    #errorMsg {
+    font-size:100%;
+    }
+}
+
+#errorDiv {
+	position: relative;
+	text-align: center;
+	width: 100%;
+  display: block;
+}
+
+#resetbtn {
+	display: none;
+}
+
+

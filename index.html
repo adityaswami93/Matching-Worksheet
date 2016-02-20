@@ -1,0 +1,76 @@
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Interactive Matching Activity</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="http://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="js/script.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  </head>
+
+  <body id='bg'>
+    <div class="container-fluid">
+    <h1 id="title">Match the Pictures</h1>
+
+
+
+    <!-- <p id="msgHome">Message: <span id="msg">Select worksheet size and click 'Generate Worksheet'</span>.</p> -->
+      <p id="instruction">Match the image on the left with the right one</p>
+      <div id="errorDiv"><p id="errorMsg"><br></p></div>
+
+      <div class="table-responsive" id="tbldiv">
+        <table id="tbl" class="table">
+        </table>
+      </div>
+
+      <div class='text-center'>
+        <button type="button" class='btn btn-danger' data-toggle="modal" data-target="#myModal">Reset</button>
+        <!-- <button id='clearbtn' class='btn-warning'>Clear Area</button> -->
+          Line width : <select id="selWidth">
+              <option value="1">1</option>
+              <option value="3" selected="selected">3</option>
+              <option value="5">5</option>
+              <option value="7">7</option>
+          </select>
+          Color : <select id="selColor">
+              <option value="black">black</option>
+              <option value="blue" selected="selected">blue</option>
+              <option value="red">red</option>
+              <option value="green">green</option>
+              <option value="yellow">yellow</option>
+              <option value="gray">gray</option>
+          </select>
+      </div>
+
+      <div id="myModal" class="modal fade"  role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <fieldset id="Fieldset1">
+                  <legend>Select worksheet size and click 'Generate Worksheet'</legend>
+                  Enter <b>n</b>:<input type="number" min="2" max="12" value="4" id="n">
+                  <button type='button' class='btn-success' data-dismiss="modal" id="btn">Generate Worksheet</button>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+
+
+
+  </body>
+  </html>
